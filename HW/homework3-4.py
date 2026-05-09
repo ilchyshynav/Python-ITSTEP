@@ -13,8 +13,10 @@ class Student:
         print("Oh, I spend my money... My balace now is:", self.money)
 
     def live_year(self):
-        self.work()
-        self.rest()
+        for i in range(12):
+          self.work()
+          self.rest()
+
         self.age = self.age + 1
 
         print(self.name)
