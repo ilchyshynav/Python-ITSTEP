@@ -9,8 +9,7 @@ class BankAccount:
             return
 
         if amount > self.money:
-
-            ask = input("Take credit? y/n: ")
+            ask = int(input("Take credit? y/n: "))
 
             if ask == "y":
                 credit = amount - self.money
